@@ -1,13 +1,13 @@
 import {Router} from "express";
-import {StatusCodes} from "http-status-codes";
+import CidadeController from "../controller/cidades/CidadeController";
 
 const router = Router();
 
 
-router.get('/', (req, res) => {
-    
-    res.status(StatusCodes.OK).json("Teste Router");
-    
-})
+router.get('/cidade', CidadeController.GetAll)
+router.get('/cidade/:id', CidadeController.GetById)
+router.post('/cidade', CidadeController.Create)
+router.put('/cidade', CidadeController.Update)
+router.delete('/cidade/:id', CidadeController.Delete)
 
 export {router}                             
