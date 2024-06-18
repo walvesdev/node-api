@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node-dev ./src/server/server.ts",
+    "production": "node ./public/server/server.js",
+    "build": "tsc",
     "test": "jest"
   },
   "dependencies": {

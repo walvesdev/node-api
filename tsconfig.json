@@ -8,12 +8,12 @@
     "strict": true,
     "skipLibCheck": true,
     "rootDir": "./src",
-    "outDir": "./build"
+    "outDir": "./public"
   },
   "exclude": [
     "./jest.config.ts",
     "./node_modules",
     "./tests",
-    "./build"
+    "./public"
   ]
 }
